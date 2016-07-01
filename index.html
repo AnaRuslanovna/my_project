@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+	<html>
+	<head>
+			<meta charset="utf-8">
+			<meta http-equiv="X-UA-Compatible" content="IE=edge">
+			<title>MyTest</title> 
+
+			<link rel="stylesheet" href="main.css">
+			<link rel="stylesheet" href="bootstrap-3.3.6-dist/css/bootstrap.min.css">
+			<link rel="stylesheet" href="bootstrap-3.3.6-dist/css/bootstrap.css">
+			<link rel="stylesheet" href="FortAwesome-Font-Awesome-8d735c9/css/font-awesome.min.css">
+
+	</head>
+	
+	<body>   
+	
+		<header role="banner">
+
+		<nav class="navbar navbar-default" role="navigation">
+	        <div class="container-fluid">
+	            <div class="nav navbar-nav">
+	                <input id="item1"  type="submit" value="item1"/>
+	                <input id="item2"  type="submit" value="item2"/>
+	            </div>
+	            <div class="nav navbar-nav navbar-right" >
+	                <p class="exit  hidden">Выход</p>
+	                <div id="registrationMenu">
+	                <form class="form-inline" role="form">
+	                    <div class="form-group">
+	                        <input type="login" class="form-control" id="Inputlogin" placeholder="Имя пользователя"
+	                               required>
+	                    </div>
+	                    <div class="form-group">
+	                        <input type="password" class="form-control" id="InputPassword"
+	                               placeholder="Пароль" required>
+	                    </div>
+	                    
+	                    <button type="submit" class="btn btn-default btn-in ">Войти</button>
+	                </form>
+						
+						<div class="checkbox">
+	                        <label>
+	                            <input type="checkbox"> Запомнить меня
+	                        </label>
+	                    </div>
+
+	                <div class="registration">
+	                    <p class="loginValidation hidden">Пройдите регистрацию!</p>
+	                    <a class="registration btn btn-link" data-toggle="modal" data-target="#myModal"> Регистрация </a>
+	                    <div class="modal fade" id="myModal" tabindex="-1" role="dialog"
+	                         aria-labelledby="myModalLabel" aria-hidden="true">
+	                        <div class="modal-dialog">
+	                            <div class="modal-content">
+	                                <div class="modal-header">
+	                                    <button type="button" class="close" data-dismiss="modal"
+	                                            aria-hidden="true">&times;</button>
+	                                    <h4 class="modal-title" id="myModalLabel">Регистрация</h4>
+	                                </div>
+	                                <div class="modal-body">
+	                                    <form action="#" method="post" id="newregistration" class="form-group input-group input-group">
+
+	                                        <input name="user" type="text" id="username" class="form-control" placeholder="Имя пользователя" value=""
+	                                               required/>
+
+	                                        <input name="pwdLogin" type="password" id="pwdLogin" class="form-control" value=""
+	                                               placeholder="Пароль" required/>
+
+	                                        <input name="Submit" type="button" id="regBtn" class="btn btn-success btn-lg" value="Создать аккаунт"/>
+
+	                                        <p class="validRegistration hidden">Логин уже занят</p>
+	                                    </form>
+	                                </div>
+	                            </div>
+	                        </div>
+	                    </div>
+	                </div>
+	                </div>
+	            </div>
+	        </div>
+	    </nav>
+
+	<div class="content">
+	    <div class="left col-sm-4">
+	        <div id="itemView " class="itemView hidden">
+	            <span class="Item1" id="title"></span>
+	            <hr>
+	            <img id="idImg" class="img-polaroid">
+	            <hr>
+	            <span id="description"></span>
+	        </div>
+	    </div>
+	    <div class="right-reviews col-sm-8">
+	        <div class="new-review hidden">
+	            <div class="stars">
+	                <form action="">
+	                    <input class="star star-5 star-rating__input" id="star-5" type="radio" value=5 name="star"/>
+	                    <label class="star star-5 star-rating__ico fa fa-star-o fa-lg" for="star-5"></label>
+	                    <input class="star star-4 star-rating__input" id="star-4" type="radio" value=4 name="star"/>
+	                    <label class="star star-4 star-rating__ico fa fa-star-o fa-lg" for="star-4"></label>
+	                    <input class="star star-3 star-rating__input" id="star-3" type="radio" value=3 name="star"/>
+	                    <label class="star star-3 star-rating__ico fa fa-star-o fa-lg" for="star-3"></label>
+	                    <input class="star star-2 star-rating__input" id="star-2" type="radio" value=2 name="star"/>
+	                    <label class="star star-2 star-rating__ico fa fa-star-o fa-lg" for="star-2"></label>
+	                    <input class="star star-1 star-rating__input" id="star-1" type="radio" value=1 checked name="star"/>
+	                    <label class="star star-1 star-rating__ico fa fa-star-o fa-lg" for="star-1"></label>
+	                </form>
+	            </div>
+	            <textarea id="content" placeholder="Ваш комментарий..." class="form-control" value=""></textarea>
+	            <button class="btnReview btn btn-info submit-btn">Отправить</button>
+				<h3> Reviews </h3>
+				<hr>
+	        </div>
+	        <div class="Review"></div>
+	        <div id="commentsReview" class="comments ">
+	        </div>
+	    </div>
+	</div>
+	<div id="www" class="form-inline">
+	</div>
+
+
+
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+		<script src="js/auth.js"></script>
+		<script src="bootstrap-3.3.6-dist/js/bootstrap.js" type="text/javascript"></script>
+		<script src="js/products.js"></script>
+	</body>
+</html>

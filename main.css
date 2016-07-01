@@ -1,0 +1,177 @@
+header{
+	height: 60px;
+}
+
+html{
+  overflow-x: hidden;
+}
+
+#content{
+	margin-bottom: 10px;
+}
+
+.starRate > ul{
+  padding-left: 0;
+}
+
+.navbar-right{
+  margin-right: 0;
+}
+
+
+.form-group {
+  padding: 1.4em;
+}
+
+.form-group label {
+  font-size: 14px;
+  font-size: 0.875rem;
+}
+
+
+.form-group input {
+  margin: 0;
+  padding: 0;
+  border-radius: 0.25em;
+}
+
+
+.form-group input[type=password] {
+  /* пространство для кнопки Скрыть */
+  padding-right: 65px;
+}
+.form-group input[type=submit] {
+  padding: 16px 0;
+  cursor: pointer;
+  background: #d34615;
+  color: #FFF;
+  font-weight: bold;
+  border: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  -ms-appearance: none;
+  -o-appearance: none;
+  appearance: none;
+}
+
+#myModalLabel{
+  text-align: center;
+}
+
+.registration a {
+    cursor: pointer;
+    padding: 0;
+    color: black;
+    display: inline-block;
+    position: absolute;
+    right: 10px;
+    top: 58px;
+    margin: 10px;
+}
+
+.checkbox{
+    display: inline-block !important;
+    margin-left: 20px;
+}
+
+.form-group{
+  padding-bottom: 0
+}
+
+.form-group input{
+  padding-left: 10px;
+}
+
+#item2, #item1{
+    display: block;
+    margin: 5px;
+    padding: 8px 20px;
+    background-color: #fff;
+    border-color: #fff;
+    cursor: pointer;
+    border: 1px solid transparent;
+    border-radius: 4px;
+}
+
+#item2:hover, #item1:hover{
+    background-color:#e8e8e8;
+    border-color: #e8e8e8;
+}
+
+#title{
+  font-size: 20pt;
+}
+
+.form-inline{
+  margin-right: 10px;
+}
+
+#username, #pwdLogin{
+    border-bottom-right-radius: 5px;
+    border-top-right-radius: 5px;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    margin-bottom: 15px;
+}
+
+#regBtn{
+  padding: 5px 10px 5px 10px;
+}
+
+.exit{
+    cursor: pointer;
+    margin: 25px;
+    display: block;
+    padding: 10px 30px;
+    background-color: #5cb85c;
+    border-color: #4cae4c;
+    color: #fff;
+    cursor: pointer;
+    border: 1px solid transparent;
+    border-radius: 4px;
+}
+.exit:hover{
+    background-color: #449d44;
+    border-color: #398439;
+}
+
+.btn-in{
+    margin-top: 20px;
+    width: 100px;
+    background-color: #5cb85c !important;
+    border-color: #4cae4c !important;
+}
+
+.btn-in:hover{
+    background-color: #449d44 !important;
+    border-color: #398439 !important;
+}
+
+.navbar-default .navbar-nav > li > a {
+  margin-right: 15px;
+}
+
+.star-rating__input{
+  display: none;
+}
+
+.star-rating__ico:hover:before,
+.star-rating__ico:hover ~ .star-rating__ico:before,
+.star-rating__input:checked ~ .star-rating__ico:before
+{
+  content: "\f005";
+}
+
+.stars{
+  direction: rtl;
+  float: left;
+}
+
+.review{
+    border: 1px solid #e95420;
+    border-radius: 5px;
+    padding: 5px;
+    margin-bottom: 10px;
+    
+}
+
